@@ -10,6 +10,7 @@
      --background:#FFF9F3;
      --text:#3E2723;
 }
+
 body {
     background: var(--background);
     color: var(--text);
@@ -23,6 +24,7 @@ body {
      align-items: center;
      padding:20px;
 }
+
 .logo {
      display: flex;
      text-decoration: none;
@@ -38,6 +40,7 @@ body {
      gap:30px;
      list-style: none;
 }
+
 .nav-links a {
      text-decoration: none;
      color: var(--text);
@@ -45,6 +48,58 @@ body {
      font-weight: 500;
      transition: 0.3s ease-in-out;
 }
+
 .nav-links a:hover {
      color: var(--primary);
+}
+
+.hero {
+padding: 80px 20px; 
+text-align: center;
+} 
+
+.hero-content {
+     max-width: 700px; 
+     margin: 0 auto;
+}
+
+.btn {
+     display: inline-flex;
+     align-items: center;
+     gap: 10px;
+     background: var(--primary);
+     color: white;
+     padding: 14px 28px;
+     border-radius: 5px;
+     text-decoration: none;
+     font-weight: 500;
+     transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+     background: var(--text);
+     color: white;
+}
+
+.hero-label {
+     display: inline-flex;
+     align-items: center; 
+     gap: 8px;
+     background: var(--secondary); 
+     color: var(--primary);
+     padding: 8px 16px;
+     border-radius: 20px;
+     font-size: 16px;
+     font-weight: 500;
+     margin-bottom: 16px;
+}
+
+.hero h1 {
+     font-family: 'Playfair Display', serif;
+     font-size: 3rem;
+     margin-bottom: 16px;
+}
+
+.hero p {
+     margin-bottom: 24px;
 }

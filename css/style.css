@@ -13,5 +13,38 @@
 body {
     background: var(--background);
     color: var(--text);
+    font-family: 'Poppins', sans-serif;
 
+}
+
+.navbar {
+     display: flex; 
+     justify-content:space-between; 
+     align-items: center;
+     padding:20px;
+}
+.logo {
+     display: flex;
+     text-decoration: none;
+     color: var(--primary);
+     font-weight: bold;
+     gap: 10px;
+     font-family: 'Playfair Display', serif;
+     align-items: center;
+}
+
+.nav-links {
+     display: flex;
+     gap:30px;
+     list-style: none;
+}
+.nav-links a {
+     text-decoration: none;
+     color: var(--text);
+     font-family: 'Poppins', serif;
+     font-weight: 500;
+     transition: 0.3s ease-in-out;
+}
+.nav-links a:hover {
+     color: var(--primary);
 }

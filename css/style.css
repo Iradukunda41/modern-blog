@@ -4,7 +4,14 @@
      box-sizing: border-box;
 }
 
-
+:root {
+     --primary: #BF360C;
+     --secondary:#FFEFD9;
+     --background:#FFF9F3;
+     --text:#3E2723;
+}
 body {
-      
-     }
+    background: var(--background);
+    color: var(--text);
+
+}

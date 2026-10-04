@@ -49,6 +49,11 @@ body {
      transition: 0.3s ease-in-out;
 }
 
+.nav-links a:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+}
+
 .nav-links a:hover {
      color: var(--primary);
 }
@@ -84,6 +89,12 @@ body {
      transition: 0.3s ease-in-out;
 }
 
+.btn:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+}
+
+
 .btn:hover {
      background: var(--text);
      color: white;
@@ -112,11 +123,6 @@ body {
      margin-bottom: 24px;
     
 }
-
-/* =========================
-   BLOG SECTION
-========================= */
-
 .blog-section {
      max-width: 1200px;
      margin: 0 auto;
@@ -140,7 +146,7 @@ body {
 
 .section-heading h2 {
      font-family: 'Playfair Display', serif;
-     font-size: 2.5rem;
+     font-size: 3rem;
      color: var(--text);
      margin-bottom: 12px;
 }
@@ -151,20 +157,12 @@ body {
 }
 
 
-/* =========================
-   BLOG GRID
-========================= */
-
 .blog-grid {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 30px;
 }
 
-
-/* =========================
-   BLOG CARD
-========================= */
 
 .blog-card {
      background: white;
@@ -184,10 +182,6 @@ body {
 }
 
 
-/* =========================
-   CARD IMAGE
-========================= */
-
 .card-image {
      width: 100%;
      height: 230px;
@@ -204,11 +198,6 @@ body {
 .blog-card:hover .card-image img {
      transform: scale(1.06);
 }
-
-
-/* =========================
-   CARD CONTENT
-========================= */
 
 .card-content {
      padding: 22px;
@@ -240,10 +229,6 @@ body {
 }
 
 
-/* =========================
-   DATE AND READ TIME
-========================= */
-
 .card-info {
      display: flex;
      justify-content: space-between;
@@ -264,11 +249,6 @@ body {
      color: var(--primary);
 }
 
-
-/* =========================
-   READ MORE
-========================= */
-
 .read-more {
      display: inline-flex;
      align-items: center;
@@ -279,6 +259,11 @@ body {
      font-size: 13px;
      font-weight: 600;
      transition: 0.3s ease-in-out;
+}
+
+.read-more:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
 }
 
 .read-more:hover {
@@ -293,42 +278,15 @@ body {
      transform: translateX(5px);
 }
 
-.menu-link:focus-visible {
-     outline: 3px solid orange;
-     outline-offset: 3px;
-}
-
-/* =========================
-   HEALTHY FOOD
-========================= */
-
 .healthy-food {
      padding: 80px 20px;
      background: #f1f6ed;
 }
 
-.healthy-food .section-heading {
-     margin-bottom: 0;
-}
-
-
-/* =========================
-   DESSERTS
-========================= */
-
 .desserts {
      padding: 80px 20px;
      background: var(--secondary);
 }
-
-.desserts .section-heading {
-     margin-bottom: 0;
-}
-
-
-/* =========================
-   ABOUT
-========================= */
 
 .about {
      padding: 80px 20px;
@@ -341,3 +299,169 @@ body {
 }
 
 
+@media (max-width: 900px) {
+    .blog-grid {
+          grid-template-columns: repeat(2, 1fr);
+     }
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.post {
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 60px 20px;
+}
+
+.post h1 {
+     font-family: 'Playfair Display', serif;
+     font-size: 2.5rem;
+     margin: 12px 0;
+}
+
+.post-meta {
+     display: flex;
+     gap: 20px;
+     color: #806f66;
+     font-size: 14px;
+     margin-bottom: 25px;
+}
+
+.post-meta span {
+     display: flex; 
+     align-items: center;  
+     gap: 6px;
+}
+
+.post img {
+     width: 100%;
+     height: 380px;
+     object-fit: cover;
+     border-radius: 10px;
+     margin-bottom: 30px;
+}
+
+.post h2 {
+     font-family: 'Playfair Display', serif;
+     margin: 30px 0 12px;
+}
+
+.post p {
+     line-height: 1.8;
+}
+
+.post ul,
+.post ol {
+     padding-left: 25px;
+     line-height: 1.8;
+}
+
+.desserts {
+    padding: 80px 20px;
+    background: var(--secondary);
+}
+
+.desserts .section-heading {
+    margin-bottom: 45px;
+}
+
+.desserts .blog-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.healthy-food {
+    padding: 80px 20px;
+    background: #f1f6ed;
+}
+
+.healthy-food .section-heading {
+    margin-bottom: 45px;
+}
+
+.healthy-food .blog-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about {
+     padding: 80px 20px;
+     background: white;
+}
+
+.about-content {
+     max-width: 750px;
+     margin: 0 auto;
+}
+
+.about-content p {
+     line-height: 1.8;
+     color: #6d5b53;
+     font-size: 15px;
+     margin-bottom: 20px;
+}
+
+.about .section-heading {
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.footer {
+    background: var(--text);
+    color: white;
+    text-align: center;
+    padding: 50px 20px 25px;
+}
+
+.footer .logo {
+    justify-content: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.social-links a:hover {
+    color: var(--secondary);
+}
+
+.social-links a:focus-visible {
+    outline: 3px solid var(--secondary);
+    outline-offset: 3px;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 25px;
+}
